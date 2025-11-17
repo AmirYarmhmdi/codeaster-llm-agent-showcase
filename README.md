@@ -1,7 +1,4 @@
-آفرین، فقط چند جا مشکل از کپی‌پیست بوده (کدبلاک‌ها درست بسته نشده، "yaml / Copy code" و… توی متن مونده).
-این یک نسخه **کاملاً تمیز و درستِ Markdown** از همون README است؛ همین رو جایگزین کن 👇
 
-````markdown
 # 🤖 LLM-Driven Code_Aster Automation  
 ### A Showcase of My Work on AI-Assisted Structural Analysis  
 *Amir Yarmohamadi — 2025*
