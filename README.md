@@ -1,4 +1,7 @@
+آفرین، فقط چند جا مشکل از کپی‌پیست بوده (کدبلاک‌ها درست بسته نشده، "yaml / Copy code" و… توی متن مونده).
+این یک نسخه **کاملاً تمیز و درستِ Markdown** از همون README است؛ همین رو جایگزین کن 👇
 
+````markdown
 # 🤖 LLM-Driven Code_Aster Automation  
 ### A Showcase of My Work on AI-Assisted Structural Analysis  
 *Amir Yarmohamadi — 2025*
@@ -81,7 +84,7 @@ Automatic creation of `.export` files based on workspace structure.
 
 Key features:
 
-- auto-path linking for `.comm`/`.med`  
+- auto-path linking for `.comm` / `.med`  
 - standardized file names  
 - run directory management  
 
@@ -101,15 +104,14 @@ I integrated the LLM layer:
 ### 🔹 7. Workspace Manager
 I implemented the standardized workspace:
 
+```text
 workspace/
-├── model.geo
-├── model.med
-├── model.comm
-├── model.export
-├── results/
-
-yaml
-Copy code
+ ├── model.geo
+ ├── model.med
+ ├── model.comm
+ ├── model.export
+ └── results/
+````
 
 This made the entire pipeline reproducible and clean.
 
@@ -117,21 +119,22 @@ This made the entire pipeline reproducible and clean.
 
 ## 🧪 Example Workflow
 
-### User input:
+### 🧑‍💻 User input:
+
+```text
 simulate a 5m concrete beam, rectangular section 0.35m x 0.25m,
 load 1300 N at the free end
+```
 
-mathematica
-Copy code
+### 🔄 The LLM automatically:
 
-### The LLM automatically:
-1. extracts parameters  
-2. creates geometry  
-3. generates mesh  
-4. writes `.comm`  
-5. writes `.export`  
-6. runs Code_Aster  
-7. returns plots + result summary  
+1. extracts parameters
+2. creates geometry
+3. generates mesh
+4. writes `.comm`
+5. writes `.export`
+6. runs Code_Aster
+7. returns plots + result summary
 
 ---
 
@@ -151,57 +154,72 @@ C -->|Run| F[Code_Aster Solver]
 F --> H[Results & Visualization]
 
 G --> M --> D --> E --> F
-📌 Features
-Natural-language-driven FE analysis
+```
 
-Parameter extraction via LLM
+---
 
-Full automation: geometry → mesh → FE solver
+## 📌 Features
 
-Error-resistant pipeline
+* Natural-language-driven FE analysis
+* Parameter extraction via LLM
+* Full automation: geometry → mesh → FE solver
+* Error-resistant pipeline
+* Modular Python architecture
+* Works with OpenAI API + LangChain
 
-Modular Python architecture
+---
 
-Works with OpenAI API + LangChain
+## 📸 Screenshots
 
-📸 Screenshots
-(Add your images here, e.g. pipeline runs, plots, terminal screenshots)
+*(Add your images here, e.g. pipeline runs, plots, terminal screenshots)*
 
-Copy code
+```text
 images/
  ├── pipeline_run.png
  ├── result_plot.png
  └── workspace_structure.png
-🤝 Collaboration
+```
+
+---
+
+## 🤝 Collaboration
+
 This work was developed jointly with:
 
-Saeideh Mohammadikish
-(host of the main repository)
+* **Saeideh Mohammadikish**
+  *(host of the main repository)*
 
 The full project is available at:
-👉 (put GitHub link here)
+👉 *(put GitHub link here)*
 
-📄 Report & Presentation (Optional)
+---
+
+## 📄 Report & Presentation (Optional)
+
 You can include links to:
 
-project report PDF
-
-presentation slides
-
-diagrams
-
-any deliverable from the university
+* project report PDF
+* presentation slides
+* diagrams
+* any university deliverables
 
 Example:
 
-bash
-Copy code
+```text
 📄 Report (PDF): link  
-🎤 Presentation Slides: link  
-👨‍💻 Author
-Amir Yarmohamadi
+🎤 Presentation Slides: link
+```
+
+---
+
+## 👨‍💻 Author
+
+**Amir Yarmohamadi**
 Structural Engineer → AI & Computational Mechanics
 Politecnico di Torino
 
-⭐ If useful, please give a star
+---
+
+## ⭐ If useful, please give a star
+
 Seeing support helps us continue improving the project.
