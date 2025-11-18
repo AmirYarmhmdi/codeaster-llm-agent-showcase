@@ -145,8 +145,6 @@ load 1300 N at the free end
 
 ---
 
-## 🧱 System Architecture (High-Level)
-
 ```mermaid
 graph LR
 
@@ -170,6 +168,21 @@ graph LR
     B --> E
     B --> F
     B --> H
+
+    %% --- Colors ---
+    %% User (circle)
+    style A fill:#fde047,stroke:#ca8a04,color:#000
+
+    %% LLM Agent (blue)
+    style B fill:#bfdbfe,stroke:#1e3a8a,color:#000
+
+    %% Tools (teal/green-ish)
+    style G fill:#ccfbf1,stroke:#0f766e,color:#000
+    style M fill:#ccfbf1,stroke:#0f766e,color:#000
+    style D fill:#ccfbf1,stroke:#0f766e,color:#000
+    style E fill:#ccfbf1,stroke:#0f766e,color:#000
+    style F fill:#ccfbf1,stroke:#0f766e,color:#000
+    style H fill:#ccfbf1,stroke:#0f766e,color:#000
 ```
 
 ---
