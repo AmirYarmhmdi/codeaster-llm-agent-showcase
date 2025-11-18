@@ -155,16 +155,17 @@ flowchart LR
 A[User Request] --> B[LLM Agent (OpenAI)]
 B --> C{Tool Selection}
 
-C -->|Geometry| G[Geometry Generator<br/>Gmsh]
+C -->|Geometry| G[Geometry Generator (Gmsh)]
 C -->|Mesh| M[Mesh Generator]
 C -->|COMM| D[COMM Generator]
-C -->|Export| E[Export File Generator]
+C -->|Export| E[Export Generator]
 C -->|Run| F[Code_Aster Solver]
 
 F --> H[Visualization & Outputs]
 
 G --> M --> D --> E --> F
 ```
+
 ---
 
 ## 📌 Features
@@ -206,6 +207,7 @@ Her full project repository:
 ## 👨‍💻 Author
 
 **Amir Yarmohamadi**  
+**Saeideh Mohammadikish**  
 Structural Engineer → AI & Computational Mechanics
 
 ---
