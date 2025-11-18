@@ -149,14 +149,27 @@ load 1300 N at the free end
 
 ```mermaid
 graph LR
-    A[User] <--> B[LLM Agent]
-    
-    B <--> G[Geometry Generator]
-    B <--> M[Mesh Generator]
-    B <--> D[COMM Generator]
-    B <--> E[Export Generator]
-    B <--> F[Code_Aster Solver]
-    B <--> H[Visualization & Outputs]
+
+    %% Nodes
+    A((User))
+    B([LLM Agent])
+
+    G[Geometry Generator]
+    M[Mesh Generator]
+    D[COMM Generator]
+    E[Export Generator]
+    F[Code_Aster Solver]
+    H[Visualization & Outputs]
+
+    %% Connections
+    A <--> B
+
+    B --> G
+    B --> M
+    B --> D
+    B --> E
+    B --> F
+    B --> H
 ```
 
 ---
@@ -187,7 +200,6 @@ images/
 
 Developed collaboratively with:
 
-**Amir Yarmohamadi**  
 **Saeideh Mohammadikish**
 
 ---
