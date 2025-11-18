@@ -151,7 +151,6 @@ load 1300 N at the free end
 graph LR
     A[User] --> B[LLM Agent]
     
-    B --> C{Tool Selection}
     B --> G[Geometry Generator]
     B --> M[Mesh Generator]
     B --> D[COMM Generator]
@@ -160,7 +159,6 @@ graph LR
     B --> H[Visualization & Outputs]
     H --> B[LLM Agent]
     B --> A[User]
-    G --> M --> D --> E --> F
 ```
 
 ---
