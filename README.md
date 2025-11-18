@@ -6,8 +6,8 @@
 
 ## 🚀 Overview
 
-This repository showcases **my technical contributions** to a collaborative project with  
-**Saeideh Mohammadikish**, where we developed an **LLM-based automation pipeline for the Code_Aster FEM solver** using Python, LangChain, and Gmsh.
+This repository showcases **my technical contributions** to a collaborative project with **Saeideh Mohammadikish**,
+where we developed an **LLM-based automation pipeline for the Code_Aster FEM solver** using Python, LangChain, Code_Aster, and Gmsh.
 
 The system enables a user to describe a structural problem **in natural language**, and the pipeline automatically generates:
 
