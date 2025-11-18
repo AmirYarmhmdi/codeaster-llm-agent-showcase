@@ -145,24 +145,27 @@ load 1300 N at the free end
 6. Code_Aster execution  
 7. Plot and result generation  
 
+---
+
 ## 🧱 System Architecture (High-Level)
 
 ```mermaid
-flowchart LR
+flowchart LR;
 
-A[User Request] --> B[LLM Agent (OpenAI)]
-B --> C{Tool Selection}
+A[User Request] --> B[LLM Agent (OpenAI)];
+B --> C{Tool Selection};
 
-C -->|Geometry| G[Geometry Generator (Gmsh)]
-C -->|Mesh| M[Mesh Generator]
-C -->|COMM| D[COMM Generator]
-C -->|Export| E[Export File Generator]
-C -->|Run| F[Code_Aster Solver]
+C -->|Geometry| G[Geometry Generator (Gmsh)];
+C -->|Mesh| M[Mesh Generator];
+C -->|COMM| D[COMM Generator];
+C -->|Export| E[Export File Generator];
+C -->|Run| F[Code_Aster Solver];
 
-F --> H[Visualization & Outputs]
+F --> H[Visualization & Outputs];
 
-G --> M --> D --> E --> F
+G --> M --> D --> E --> F;
 ```
+
 ---
 
 ## 📌 Features
@@ -201,7 +204,7 @@ Her full project repository:
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
 **Amir Yarmohamadi**  
 **Saeideh Mohammadikish**  
@@ -212,4 +215,3 @@ Structural Engineer → AI & Computational Mechanics
 ## ⭐ Support
 
 If you find this repository useful or inspiring, please consider giving it a ⭐.
-
