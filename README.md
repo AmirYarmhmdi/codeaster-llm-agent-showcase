@@ -198,16 +198,6 @@ graph LR
 
 ---
 
-## 📸 Screenshots
-
-```
-images/
- ├── pipeline_run.png
- ├── displacement_plot.png
- └── workspace_structure.png
-```
-
----
 
 ## 🤝 Collaboration
 
