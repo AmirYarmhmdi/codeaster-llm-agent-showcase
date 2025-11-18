@@ -162,12 +162,12 @@ graph LR
     %% Connections
     A <--> B
 
-    B --> G
-    B --> M
-    B --> D
-    B --> E
-    B --> F
-    B --> H
+    B <--> G
+    B <--> M
+    B <--> D
+    B <--> E
+    B <--> F
+    B <--> H
 
     %% --- Colors ---
     %% User (circle)
