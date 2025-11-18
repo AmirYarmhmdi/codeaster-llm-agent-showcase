@@ -153,18 +153,18 @@ load 1300 N at the free end
 flowchart LR
 
 A[User Request] --> B[LLM Agent (OpenAI)]
-B --> C{Select Tool}
+B --> C{Tool Selection}
 
-C -->|Geometry| G[Geometry Generator (Gmsh)]
+C -->|Geometry| G[Geometry Generator<br/>Gmsh]
 C -->|Mesh| M[Mesh Generator]
 C -->|COMM| D[COMM Generator]
-C -->|Export| E[Export Generator]
+C -->|Export| E[Export File Generator]
 C -->|Run| F[Code_Aster Solver]
+
 F --> H[Visualization & Outputs]
 
 G --> M --> D --> E --> F
 ```
-
 ---
 
 ## 📌 Features
