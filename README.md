@@ -148,29 +148,16 @@ load 1300 N at the free end
 ## 🧱 System Architecture (High-Level)
 
 ```mermaid
-flowchart LR
-
-    A([User Request])
-    B([LLM Agent])
-    C{Tool Selection}
-
-    G[Geometry Generator (Gmsh)]
-    M[Mesh Generator]
-    D[COMM Generator]
-    E[Export File Generator]
-    F[Code_Aster Solver]
-    H([Visualization & Outputs])
-
-    A --> B
-    B --> C
-
-    C --> G
-    C --> M
-    C --> D
-    C --> E
-    C --> F
-
-    G --> M --> D --> E --> F --> H
+graph LR
+    A[User Request] --> B[LLM Agent]
+    B --> C{Tool Selection}
+    C --> G[Geometry Generator]
+    C --> M[Mesh Generator]
+    C --> D[COMM Generator]
+    C --> E[Export Generator]
+    C --> F[Code_Aster Solver]
+    F --> H[Visualization & Outputs]
+    G --> M --> D --> E --> F
 ```
 
 ---
