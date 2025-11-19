@@ -186,6 +186,7 @@ graph LR
 ```
 
 ---
+```mermaid
 graph LR
 
     %% Nodes
@@ -220,7 +221,7 @@ graph LR
     style F fill:#ccfbf1,stroke:#0f766e,color:#000
     style G fill:#ccfbf1,stroke:#0f766e,color:#000
     style H fill:#ccfbf1,stroke:#0f766e,color:#000
-
+```
 
 
 ---
