@@ -186,7 +186,44 @@ graph LR
 ```
 
 ---
+graph LR
 
+    %% Nodes
+    A[Wooden Pole]
+    B((Vibration))
+    C[Accelerometer Sensor<br/>(3-axis MEMS)]
+    D[Microcontroller<br/>(ESP32)]
+    E[Gateway / Cloud Server]
+    F[Preprocessing → FFT → Frequency Tracking (Δf)]
+    G[Time-Series Database]
+    H[Dashboard:<br/>Visualization, Trends & Alerts]
+
+    %% Connections
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+
+    %% --- Colors (like your previous diagram) ---
+    %% Pole (yellow-ish, like User)
+    style A fill:#fde047,stroke:#ca8a04,color:#000
+
+    %% Sensor & microcontroller (blue-ish like LLM Agent)
+    style C fill:#bfdbfe,stroke:#1e3a8a,color:#000
+    style D fill:#bfdbfe,stroke:#1e3a8a,color:#000
+
+    %% Processing & server modules (green/teal like tools)
+    style E fill:#ccfbf1,stroke:#0f766e,color:#000
+    style F fill:#ccfbf1,stroke:#0f766e,color:#000
+    style G fill:#ccfbf1,stroke:#0f766e,color:#000
+    style H fill:#ccfbf1,stroke:#0f766e,color:#000
+
+
+
+---
 ## 📌 Features
 
 - Natural-language-driven structural analysis  
