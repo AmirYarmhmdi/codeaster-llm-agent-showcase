@@ -284,6 +284,13 @@ The project combines structural engineering knowledge, Python development, and L
 **Original Full Project Repository:**  
 👉 [github.com/smohammadikish/training](https://github.com/smohammadikish/training)
 
+## 📄 License
+
+**Proprietary – All Rights Reserved.**
+
+Unauthorized use, copying, modification, or redistribution
+of this project's contents is prohibited.
+
 ---
 
 ## ⭐ Support
