@@ -50,8 +50,10 @@ The demonstration highlights the main stages of the automation pipeline:
 ### Example User Input
 
 ```text
-Simulate a 5m concrete beam, rectangular section 0.35m x 0.25m,
-load 1300 N at the free end.
+Simulate a 5.0 m cantilever steel beam with 12 finite elements,
+using an IPF180 cross-section and S275 structural steel
+according to Eurocode EN 1993.
+Apply a 1.6 kN vertical point load at the free end.
 ```
 
 
