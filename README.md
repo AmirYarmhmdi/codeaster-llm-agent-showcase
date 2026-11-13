@@ -30,11 +30,15 @@ The main objective is to combine the flexibility of LLMs with deterministic engi
 
 ---
 
+
 ## 🎬 Demo
 
 Watch the system transform a natural-language structural engineering request into an automated finite element analysis workflow.
 
-**▶️ Demo Video:** [Watch the Full Demonstration]([https://github.com/AmirYarmhmdi/codeaster-llm-agent-showcase/blob/main/Demo.mp4)
+<video src="./Demo.mp4" controls width="100%">
+  Your browser does not support HTML video.
+  <a href="./Demo.mp4">Watch the Demo Video</a>
+</video>
 
 The demonstration highlights the main stages of the automation pipeline:
 
@@ -46,6 +50,7 @@ The demonstration highlights the main stages of the automation pipeline:
 6. Results are extracted and visualized.
 
 ### Example User Input
+
 
 ```text
 Simulate a 5m concrete beam, rectangular section 0.35m x 0.25m,
